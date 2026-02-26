@@ -50,6 +50,12 @@ int main() {
     if (dem > 0) {
         float trungBinh = (float)tong / dem; 
         printf("\n=> Có %d số chia hết cho 3.", dem);
+        printf("\n=> Các số chia hết cho 3 trong mảng là: " \n");
+        for (int i = 0; i < n; i++) {
+            if (arr[i] % 3 == 0) {
+                printf("%d ", arr[i]);
+            }
+        }
         printf("\n=> Trung bình tổng của chúng là: %.2f\n", trungBinh);
     } else {
         printf("\nTrong mảng không có số nào chia hết cho 3.\n");
